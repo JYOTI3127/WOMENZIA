@@ -1,5 +1,6 @@
 // Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -16,12 +17,12 @@ const Footer = () => {
 
         <div className="footer-column">
           <h4>Quick Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/collection">Collection</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
+<ul>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/collection">Collection</Link></li>
+  <li><Link to="/about">About</Link></li>
+  <li><Link to="/contact">Contact</Link></li>
+</ul>
         </div>
 
         <div className="footer-column">
